@@ -166,20 +166,22 @@ The following students were selected from the early application deadline. Additi
       They appear here automatically after the next Jekyll build.
     {% endcomment %}
     {% assign folder = conf.photo_folder %}
-    {% assign all_photos = site.static_files | where_exp: "f", "f.path contains folder" %}
-    {% assign photos = all_photos | where_exp: "f", "f.extname == '.jpg' or f.extname == '.jpeg' or f.extname == '.png' or f.extname == '.webp'" %}
-    {% if photos.size > 0 %}
+    {% if folder %}
     <div class="photo-gallery" id="gallery-{{ conf.year }}">
-      {% for photo in photos %}
+      {% for file in site.static_files %}
+        {% if file.path contains folder %}
+          {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.png' or file.extname == '.webp' or file.extname == '.JPG' or file.extname == '.JPEG' or file.extname == '.PNG' or file.extname == '.WEBP' %}
       <a class="photo-thumb"
-         href="{{ photo.path | relative_url }}"
+         href="{{ file.path | relative_url }}"
          target="_blank"
          rel="noopener"
          aria-label="{{ conf.year }} conference photo">
-        <img src="{{ photo.path | relative_url }}"
+        <img src="{{ file.path | relative_url }}"
              alt="{{ conf.year }} oSTEM Conference — {{ conf.location }}"
              loading="lazy">
       </a>
+          {% endif %}
+        {% endif %}
       {% endfor %}
     </div>
     {% endif %}

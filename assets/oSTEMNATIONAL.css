@@ -586,6 +586,10 @@ a:hover { text-decoration: none; }
   margin-top: 0.85rem;
 }
 
+.photo-gallery:empty {
+  display: none;
+}
+
 .photo-thumb {
   display: block;
   aspect-ratio: 4 / 3;
