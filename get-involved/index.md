@@ -15,7 +15,7 @@ description: Join oSTEM MSU — attend meetings, volunteer, become a leader, and
 Meetings are open to everyone — no RSVP needed. Just show up!
 
 <div class="notice">
-  Meeting times and rooms occasionally change. Join our <a href="https://discord.gg/jhkHnVwd6e">Discord</a> or <a href="/contact/">mailing list</a> to get the latest updates.
+  Meeting times and rooms occasionally change. Join our <a href="{{ site.social.discord }}">Discord</a> or <a href="{{ '/contact/' | relative_url }}">mailing list</a> to get the latest updates.
 </div>
 
 ---

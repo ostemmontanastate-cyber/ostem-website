@@ -17,21 +17,20 @@ description: Get in touch with oSTEM at Montana State University — email, Disc
 
     <h3>General Inquiries</h3>
     <p>
-      <!-- Replace with real email -->
-      <a href="mailto:ostem@msu.example.edu">ostem.montanastate@gmail.com</a>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
     </p>
 
     <h3>Discord</h3>
     <p>
       The fastest way to reach us. Join our server and post in
       <code>#general</code> or DM an officer.<br>
-      <a href="https://discord.gg/jhkHnVwd6e" target="_blank" rel="noopener noreferrer">Join our Discord →</a>
+      <a href="{{ site.social.discord }}" target="_blank" rel="noopener noreferrer">Join our Discord →</a>
     </p>
 
     <h3>Linktree</h3>
     <p>
       All our links in one place — social media, newsletter signup, and more.<br>
-      <a href="https://linktr.ee/ostem.msu" target="_blank" rel="noopener noreferrer">https://linktr.ee/ostem.msu →</a>
+      <a href="{{ site.social.linktree }}" target="_blank" rel="noopener noreferrer">{{ site.social.linktree }} →</a>
     </p>
 
     <h3>Campus Address</h3>
