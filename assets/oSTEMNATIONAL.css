@@ -1,0 +1,668 @@
+/*
+ * oSTEM at Montana State University — Chapter Stylesheet
+ * Hyperminimal design, compatible with GitHub Pages / Jekyll.
+ * Based on the oSTEM National visual identity.
+ *
+ * To update: edit this file. All pages share this stylesheet.
+ */
+
+/* === FONTS ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* === RESET & BASE ===================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1a1a1a;
+  background: #ffffff;
+  line-height: 1.65;
+}
+
+/* === PRIDE STRIPE ===================================================
+   Mirrors the progress pride flag stripe from the oSTEM logo.
+   Colors in order: Black, Brown, Light Blue, Pink, White,
+   Red, Orange, Yellow, Green, Blue, Purple.
+================================================================== */
+.pride-stripe {
+  display: flex;
+  height: 5px;
+  width: 100%;
+}
+.pride-stripe span { flex: 1; display: block; }
+.pride-stripe span:nth-child(1)  { background: #231F20; }
+.pride-stripe span:nth-child(2)  { background: #7B3F00; }
+.pride-stripe span:nth-child(3)  { background: #74C0E8; }
+.pride-stripe span:nth-child(4)  { background: #F5A8BC; }
+.pride-stripe span:nth-child(5)  { background: #D8D8D8; }
+.pride-stripe span:nth-child(6)  { background: #D32F2F; }
+.pride-stripe span:nth-child(7)  { background: #F57C00; }
+.pride-stripe span:nth-child(8)  { background: #F9C003; }
+.pride-stripe span:nth-child(9)  { background: #388E3C; }
+.pride-stripe span:nth-child(10) { background: #1976D2; }
+.pride-stripe span:nth-child(11) { background: #7B1FA2; }
+
+/* === HEADER =========================================================== */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header-logo img {
+  height: 72px;
+  width: auto;
+  display: block;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.header-links a:hover {
+  border-color: #1a1a1a;
+  background: #f5f5f5;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.header-links svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+/* === NAVIGATION ======================================================= */
+.site-nav {
+  background: #1a1a1a;
+}
+
+.nav-inner {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.nav-inner a {
+  display: block;
+  color: #e8e8e8;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  transition: background 0.15s ease, color 0.15s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-inner a:hover {
+  background: #2e2e2e;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-inner a.active {
+  color: #ffffff;
+  border-bottom-color: #F9C003;
+}
+
+/* === MAIN CONTENT ===================================================== */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem 3rem;
+}
+
+/* === TYPOGRAPHY ======================================================= */
+h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  max-width: 72ch;
+}
+
+ul, ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+li { margin-bottom: 0.3rem; }
+
+a { color: #1565C0; }
+a:hover { text-decoration: none; }
+
+.page-title {
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid #1a1a1a;
+  margin-bottom: 1.75rem;
+}
+
+.page-subtitle {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+  max-width: 72ch;
+}
+
+/* === NOTICE / CALLOUT BOX ============================================= */
+.notice {
+  border-left: 3px solid #1a1a1a;
+  background: #f5f5f5;
+  padding: 0.9rem 1.2rem;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  max-width: 72ch;
+}
+
+.notice p:last-child { margin-bottom: 0; }
+
+/* === LEADERSHIP GRID ================================================== */
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.leadership-card {
+  border: 1px solid #e0e0e0;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.leadership-card .lc-role {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #555;
+  margin-bottom: 0.35rem;
+}
+
+.leadership-card .lc-name {
+  font-weight: 600;
+  font-size: 0.975rem;
+}
+
+.leadership-card .lc-pronouns {
+  font-size: 0.8rem;
+  color: #888;
+  font-style: italic;
+  margin-top: 0.15rem;
+}
+
+.leadership-card .lc-email {
+  display: block;
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+  word-break: break-all;
+}
+
+/* === CONFERENCE PAST LIST ============================================= */
+.conference-list {
+  margin: 1.5rem 0;
+}
+
+.conference-entry {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #e8e8e8;
+  align-items: flex-start;
+}
+
+.conference-entry:last-child { border-bottom: none; }
+
+.ce-year {
+  flex-shrink: 0;
+  width: 60px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  padding-top: 0.15rem;
+}
+
+.ce-body .ce-location {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.ce-body .ce-dates {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+.ce-body .ce-desc {
+  font-size: 0.9rem;
+  max-width: 64ch;
+  margin-bottom: 0;
+}
+
+.ce-attendees {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 0.2rem;
+}
+
+/* === FORM ============================================================= */
+.application-form {
+  max-width: 580px;
+  margin: 1.5rem 0;
+}
+
+.form-group {
+  margin-bottom: 1.1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  background: #fff;
+  color: #1a1a1a;
+  transition: border-color 0.15s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #1a1a1a;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-note {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.btn:hover {
+  background: #333;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* === EVENTS LIST ====================================================== */
+.events-list { margin: 1.5rem 0; }
+
+.event-item {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid #e8e8e8;
+  align-items: flex-start;
+}
+
+.event-item:last-child { border-bottom: none; }
+
+.event-date {
+  flex-shrink: 0;
+  width: 54px;
+  border: 1px solid #1a1a1a;
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.event-date .ed-month {
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.15rem 0;
+}
+
+.event-date .ed-day {
+  font-size: 1.35rem;
+  font-weight: 700;
+  padding: 0.1rem 0 0.15rem;
+  line-height: 1.2;
+}
+
+.event-info .ei-title {
+  font-weight: 600;
+  font-size: 0.975rem;
+}
+
+.event-info .ei-meta {
+  font-size: 0.82rem;
+  color: #555;
+  margin-top: 0.15rem;
+}
+
+.event-info .ei-desc {
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+  max-width: 60ch;
+  margin-bottom: 0;
+}
+
+.event-info .ei-recurring {
+  font-size: 0.78rem;
+  color: #888;
+  font-style: italic;
+  margin-top: 0.2rem;
+}
+
+/* === RESOURCES ======================================================== */
+.resource-section { margin-bottom: 2rem; }
+
+.resource-section h2 {
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #444;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.resource-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resource-links li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  margin: 0;
+}
+
+.resource-links li:last-child { border-bottom: none; }
+
+.resource-links a {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.resource-links .rl-desc {
+  display: block;
+  font-size: 0.82rem;
+  color: #666;
+  margin-top: 0.1rem;
+}
+
+/* === HOME PAGE ======================================================== */
+.home-intro {
+  padding: 1.5rem 0 1rem;
+  max-width: 70ch;
+}
+
+.home-intro h1 {
+  font-size: 2rem;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.home-card {
+  padding: 1.25rem;
+  background: #fff;
+  text-decoration: none;
+  color: #1a1a1a;
+  border: none;
+  transition: background 0.15s ease;
+  display: block;
+}
+
+.home-card:hover {
+  background: #f5f5f5;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.home-card .hc-title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.home-card .hc-desc {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.5;
+  max-width: 100%;
+  margin: 0;
+}
+
+/* === CONTACT ========================================================== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.contact-info p { max-width: 100%; }
+
+/* === FOOTER =========================================================== */
+.site-footer {
+  background: #1a1a1a;
+  color: #aaaaaa;
+  text-align: center;
+  padding: 1.75rem 2rem;
+  font-size: 0.85rem;
+  margin-top: 2rem;
+}
+
+.site-footer a { color: #dddddd; }
+.site-footer a:hover { color: #ffffff; text-decoration: none; }
+.site-footer p { margin-bottom: 0.35rem; max-width: 100%; }
+
+/* === RESPONSIVE ======================================================= */
+@media (max-width: 720px) {
+  .header-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.875rem 1rem;
+  }
+
+  .header-logo img { height: 56px; }
+
+  main { padding: 1.5rem 1rem 2rem; }
+
+  .nav-inner a {
+    padding: 0.65rem 1rem;
+    font-size: 0.825rem;
+  }
+
+  .contact-grid { grid-template-columns: 1fr; }
+
+  .home-grid { grid-template-columns: 1fr 1fr; }
+
+  .conference-entry { flex-direction: column; gap: 0.5rem; }
+  .ce-year { width: auto; text-align: left; }
+}
+
+@media (max-width: 480px) {
+  .home-grid { grid-template-columns: 1fr; }
+  .leadership-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* === PHOTO GALLERY ==================================================== */
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.5rem;
+  margin-top: 0.85rem;
+}
+
+.photo-thumb {
+  display: block;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  background: #f5f5f5;
+}
+
+.photo-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.15s ease;
+}
+
+.photo-thumb:hover img {
+  opacity: 0.85;
+}
+
+/* === ITINERARY ======================================================== */
+.itinerary-list {
+  margin: 0.75rem 0 1rem;
+}
+
+.itinerary-day {
+  margin-bottom: 1rem;
+}
+
+.itin-day-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-left: 3px solid #1a1a1a;
+  padding-left: 0.6rem;
+  margin-bottom: 0.35rem;
+}
+
+.itin-events {
+  list-style: none;
+  padding: 0 0 0 1rem;
+  margin: 0;
+}
+
+.itin-events li {
+  font-size: 0.875rem;
+  padding: 0.2rem 0;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.itin-events li:last-child { border-bottom: none; }
+
+/* === ITINERARY TABLE ================================================== */
+.itinerary-table {
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.itinerary-table td {
+  padding: 0.3rem 1rem 0.3rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: top;
+}
+
+/* === PARTICIPANT LIST ================================================= */
+.participant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 1rem;
+}
+
+.participant-list li {
+  font-size: 0.95rem;
+  font-weight: 500;
+}

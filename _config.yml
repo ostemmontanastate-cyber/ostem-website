@@ -1,0 +1,29 @@
+title: oSTEM at Montana State University
+description: Out in Science, Technology, Engineering, and Mathematics — Montana State University Chapter
+url: ""
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Site metadata
+author: oSTEM MSU
+email: ostem.montanastate@gmail.com
+
+# Social links
+social:
+  discord: "https://discord.gg/jhkHnVwd6e"
+  linktree: "https://linktr.ee/ostem.msu"
+
+# Exclude from build
+exclude:
+  - Website.md
+  - Gemfile.lock
+  - "*.sh"
+  - vendor/
+  - old-sites/
+
+# Keep these _site directories across clean builds
+keep_files:
+  - assets/conference-photos

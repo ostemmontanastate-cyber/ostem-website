@@ -1,0 +1,32 @@
+# Update this file to change the leadership roster.
+# Add/remove entries as leadership changes each semester.
+
+- name: "Will Mitchell"
+  role: President
+  pronouns: He/Him 
+  email: willmitchellbusinessva@gmail.com 
+
+- name: "[Vice President Name]"
+  role: Vice President
+  pronouns: she/her
+  email: vp@example.edu
+
+- name: "[Treasurer Name]"
+  role: Treasurer
+  pronouns: he/him
+  email: treasurer@example.edu
+
+- name: "[Secretary Name]"
+  role: Secretary
+  pronouns: they/she
+  email: secretary@example.edu
+
+- name: "[Events Name]"
+  role: Events Coordinator
+  pronouns: he/they
+  email: events@example.edu
+
+- name: "[Conference Chair Name]"
+  role: Conference Chair
+  pronouns: she/they
+  email: conference@example.edu

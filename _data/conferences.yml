@@ -1,0 +1,125 @@
+# Past and upcoming oSTEM annual conferences attended by the MSU chapter.
+# The first entry is treated as the current/upcoming conference.
+# Add a new entry each year after the conference.
+#
+# photo_folder: subfolder name inside assets/conference-photos/
+#   Drop photos (.jpg, .jpeg, .png, .webp) into that folder and they appear automatically.
+#   Name the folder in the convention:  conference-YEAR  (e.g. conference-2026)
+#
+# participants: list of first names of selected attendees (optional)
+# itinerary: list of { day, events: [...] } blocks (optional)
+# hotel_rooms: optional room assignments
+
+- year: 2026
+  location: "Albuquerque, NM"
+  dates: "October 22–24, 2026"
+  attendees: 10
+  capacity: "10–12"
+  application_deadline: "Sunday, September 13, 2026"
+  faculty_advisor: "John Paxton"
+  faculty_email: "john.paxton@montana.edu"
+  description: "The 2026 national conference will take place October 22–24 in Albuquerque, New Mexico. The chapter can potentially support 10–12 students. Attendees receive airfare, shared lodging, group meals, and conference registration."
+  participants:
+    - Greyson
+    - Jade
+    - Matthew
+    - Will
+  hotel: "TBD"
+  hotel_rooms:
+    - label: "Student Room 1"
+      occupants: "TBD"
+    - label: "Student Room 2"
+      occupants: "TBD"
+    - label: "Student Room 3"
+      occupants: "TBD"
+  itinerary:
+    - day: "Thursday, October 22 — Travel to Albuquerque"
+      events:
+        - "TBD: Travel to Bozeman Airport (morning)"
+        - "TBD: Bozeman to Albuquerque"
+    - day: "Friday, October 23 — Conference Day"
+      events:
+        - "8:30 AM: Conference Breakfast Plenary"
+        - "4:15 PM: Evening Plenary"
+        - "5:45 PM: Group Dinner at TBD"
+        - "7:00–9:00 PM: oSTEM Social"
+    - day: "Saturday, October 24 — Conference Day"
+      events:
+        - "9:00 AM: Conference activities begin"
+        - "5:00 PM: Closing Plenary"
+        - "6:30 PM: Possible Group Dinner at TBD"
+    - day: "Sunday, October 25 — Travel to Bozeman"
+      events:
+        - "TBD: Depart hotel for airport"
+        - "TBD: Albuquerque to Bozeman"
+  photo_folder: "conference-2026"
+
+- year: 2025
+  location: "Baltimore, MD"
+  dates: "October 16–19, 2025"
+  attendees: 12
+  description: "The 2025 national conference took place in Baltimore, Maryland at the Sheraton Inner Harbor Hotel. MSU sponsored up to 12 students to attend with airfare, shared lodging, group meals (including dinners at Helmand and Ramen Utsuke), and conference registration, as well as a visit to the National Aquarium."
+  hotel: "Sheraton Inner Harbor Hotel"
+  photo_folder: "conference-2025"
+
+- year: 2024
+  location: "Portland, OR"
+  dates: "October 17–20, 2024"
+  attendees: 12
+  description: "The 2024 national conference took place in Portland, Oregon at the Oregon Convention Center and Hotel Eastlund. 12 MSU students were sponsored to attend with shared lodging, group meals (including Kinboshi Ramen, Bao Bao, and Grits 'n Gravy), and conference registration."
+  hotel: "Hotel Eastlund"
+  photo_folder: "conference-2024"
+
+- year: 2023
+  location: "Anaheim, CA"
+  dates: "November 9–12, 2023"
+  attendees: 12
+  description: "The 2023 national conference took place in Anaheim, California at the Cortona Inn & Suites Anaheim. 12 students and 3 faculty attended, participating in conference workshops, the Community Award Ceremony, and group dinners."
+  hotel: "Cortona Inn & Suites Anaheim"
+  photo_folder: "conference-2023"
+
+- year: 2022
+  location: "Boston, MA"
+  dates: "November 10–13, 2022"
+  attendees: 16
+  description: "The 2022 national conference took place in Boston, Massachusetts. 16 students were selected to attend and received shared lodging at the Sheraton Boston, group meals (including Pho Basil), and conference registration."
+  hotel: "Sheraton Boston"
+  photo_folder: "conference-2022"
+
+- year: 2021
+  location: "Fairmont Hot Springs, MT (Virtual Conference)"
+  dates: "October 28–31, 2021"
+  attendees: 16
+  description: "The 2021 national conference was held virtually. The MSU 16-student cohort traveled to Fairmont Hot Springs in Montana to watch and discuss conference sessions together, connect with peers, and enjoy group activities and meals."
+  hotel: "Fairmont Hot Springs Resort"
+  photo_folder: "conference-2021"
+
+- year: 2019
+  location: "Detroit, MI"
+  dates: "November 14–17, 2019"
+  attendees: 16
+  description: "The 2019 national conference took place in Detroit, Michigan at the Detroit Marriott at Renaissance Center. MSU sponsored a cohort of students who attended sessions, the career fair, and group dinners including Pegasus Taverna in Greektown."
+  hotel: "Detroit Marriott at Renaissance Center"
+  photo_folder: "conference-2019"
+
+- year: 2018
+  location: "Houston, TX"
+  dates: "November 15–18, 2018"
+  attendees: 16
+  description: "The 2018 national conference took place in Houston, Texas. 16 MSU students were sponsored by NACOE and university departments with airfare, lodging, and registration to attend and participate in the career fair."
+  photo_folder: "conference-2018"
+
+- year: 2017
+  location: "Chicago, IL"
+  dates: "November 16–19, 2017"
+  attendees: 8
+  description: "The 2017 national conference was held in Chicago, Illinois. MSU students across engineering and sciences attended with sponsorship from the College of Engineering and academic units, representing MSU at the national career fair."
+  photo_folder: "conference-2017"
+
+- year: 2016
+  location: "Denver, CO"
+  dates: "November 11–13, 2016"
+  attendees: 6
+  description: "The 2016 national conference took place in Denver, Colorado at the Hyatt Regency Denver Tech Center. Montana State University served as an academic sponsor of the conference, sending our inaugural student cohort."
+  hotel: "Hyatt Regency Denver Tech Center"
+  photo_folder: "conference-2016"
