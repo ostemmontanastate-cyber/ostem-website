@@ -28,7 +28,7 @@ Today, the chapter connects students across all STEM disciplines — from comput
 - **Open to all students** — you do not need to identify as LGBTQ+ to participate
 
 <div class="notice">
-  <strong>Leadership rotates frequently.</strong> If you are looking to collaborate with our chapter — for events, sponsorships, or partnerships — we recommend reaching out via email or Discord to ensure you're in contact with current officers. See <a href="/contact/">Contact Us</a>.
+  <strong>Leadership rotates frequently.</strong> If you are looking to collaborate with our chapter — for events, sponsorships, or partnerships — we recommend reaching out via email or Discord to ensure you're in contact with current officers. See <a href="{{ '/contact/' | relative_url }}">Contact Us</a>.
 </div>
 
 ## Current Leadership

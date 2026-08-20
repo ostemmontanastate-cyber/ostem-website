@@ -7,7 +7,7 @@ description: LGBTQ+ STEM resources for oSTEM MSU members — mental health, care
 <h1 class="page-title">Resources</h1>
 
 A curated list of resources for LGBTQ+ students in STEM at MSU and beyond.
-To suggest a resource, [contact us](/contact/) or post in the `#resources` channel on Discord.
+To suggest a resource, [contact us]({{ '/contact/' | relative_url }}) or post in the `#resources` channel on Discord.
 
 <!-- Generated from _data/resources.yml — add new sections and links in that file -->
 
@@ -27,4 +27,4 @@ To suggest a resource, [contact us](/contact/) or post in the `#resources` chann
 
 ---
 
-*Know of a resource we should add? [Send us a suggestion.](/contact/)*
+*Know of a resource we should add? [Send us a suggestion.]({{ '/contact/' | relative_url }})*
