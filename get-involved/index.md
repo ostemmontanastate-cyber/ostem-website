@@ -8,15 +8,28 @@ description: Join oSTEM MSU — attend meetings, volunteer, become a leader, and
 
 ## Where and When We Meet
 
-**Regular Meetings:** Every other Friday, 6:00 PM  
-**Location:** Student Union Building, Room 212  
-**First meeting of each semester:** Announced on Discord and the mailing list
+<!-- Generated automatically from _data/meetings.yml — update that file to change meeting times and location -->
 
-Meetings are open to everyone — no RSVP needed. Just show up!
+{% if site.data.meetings.semester %}
+**Semester:** {{ site.data.meetings.semester }}  
+{% endif %}
+**Regular Meetings:** {{ site.data.meetings.regular_meetings }}  
+**Location:** {{ site.data.meetings.location }}  
+**First meeting of each semester:** {{ site.data.meetings.first_meeting }}  
+
+{{ site.data.meetings.notes }}
 
 <div class="notice">
-  Meeting times and rooms occasionally change. Join our <a href="{{ site.social.discord }}">Discord</a> or <a href="{{ '/contact/' | relative_url }}">mailing list</a> to get the latest updates.
+  {{ site.data.meetings.notice }}
 </div>
+
+---
+
+## Weekly Newsletter
+
+Stay up-to-date with oSTEM MSU! Sign up for our weekly newsletter to get announcements, campus-wide event reminders, job and internship opportunities, and tips for navigating your time at MSU. You can also [open the sign-up form directly]({{ site.social.newsletter }}).
+
+{% include newsletter-form.html %}
 
 ---
 

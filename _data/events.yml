@@ -1,43 +1,10 @@
 # Upcoming events — add new events here and they appear automatically on Get Involved.
 # Format dates as YYYY-MM-DD. month/day are display strings.
 
-- title: General Meeting
-  date: 2026-09-04
-  month: Sep
-  day: "04"
-  time: "6:00 PM"
-  location: "Student Union Building, Room 212"
-  description: Kick off the semester with our first general meeting. Come meet other members and hear about upcoming events!
-  recurring: Every other Friday
-
-- title: Professional Development Workshop
-  date: 2026-09-18
-  month: Sep
-  day: "18"
-  time: "5:30 PM"
-  location: "Engineering Hall, Room 108"
-  description: Resume review and networking skills for LGBTQ+-inclusive STEM careers.
-
-- title: Conference Interest Meeting
-  date: 2026-10-02
-  month: Oct
-  day: "02"
-  time: "6:00 PM"
-  location: "Student Union Building, Room 212"
-  description: Interested in attending the annual oSTEM conference? Learn about funding opportunities and how to apply.
-
-- title: Fall Social
-  date: 2026-10-16
-  month: Oct
-  day: "16"
-  time: "7:00 PM"
-  location: "TBD"
-  description: Casual social for members, friends, and anyone curious about oSTEM. All are welcome!
-
-- title: General Meeting
-  date: 2026-10-30
-  month: Oct
-  day: "30"
-  time: "6:00 PM"
-  location: "Student Union Building, Room 212"
-  description: Regular bi-weekly general meeting. Agenda posted in Discord.
+- title: Catapalooza
+  date: 2026-08-28
+  month: Aug
+  day: "28"
+  time: "10:00 AM – 3:00 PM"
+  location: "MSU Centennial Mall and Romney Oval"
+  description: "Visit the oSTEM table at Catapalooza! Meet current officers, learn about upcoming meetings and conference opportunities, and grab some club swag."

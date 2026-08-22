@@ -29,8 +29,14 @@ description: Get in touch with oSTEM at Montana State University — email, Disc
 
     <h3>Linktree</h3>
     <p>
-      All our links in one place — social media, newsletter signup, and more.<br>
+      All our links in one place — social media, discord, and more.<br>
       <a href="{{ site.social.linktree }}" target="_blank" rel="noopener noreferrer">{{ site.social.linktree }} →</a>
+    </p>
+
+    <h3>Weekly Newsletter</h3>
+    <p>
+      Sign up for weekly chapter updates, campus events, and opportunities.<br>
+      <a href="{{ site.social.newsletter }}" target="_blank" rel="noopener noreferrer">Subscribe to our newsletter →</a>
     </p>
 
     <h3>Campus Address</h3>

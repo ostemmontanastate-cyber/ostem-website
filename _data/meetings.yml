@@ -1,0 +1,13 @@
+# ==============================================================================
+# oSTEM MSU — Meeting Schedule & Location Configuration
+# ==============================================================================
+# Update this file at the start of each semester to easily change meeting dates,
+# times, and locations across the website (e.g. on the "Get Involved" page).
+# ==============================================================================
+
+semester: "Fall 2026"
+regular_meetings: "TBH"
+location: "TBH"
+first_meeting: "Announced on Discord and the weekly newsletter"
+notes: "Meetings are open to everyone — no RSVP needed. Just show up!"
+notice: "Meeting times and rooms occasionally change. Join our Discord or subscribe to our weekly newsletter to get the latest updates."
