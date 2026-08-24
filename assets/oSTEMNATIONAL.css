@@ -670,3 +670,61 @@ a:hover { text-decoration: none; }
   font-size: 0.95rem;
   font-weight: 500;
 }
+
+/* === ANNOUNCEMENT BANNER ============================================== */
+.announcement-banner {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #3ede54;
+  color: #111111;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  position: relative;
+  user-select: none;
+}
+
+.announcement-banner:hover .announcement-track {
+  animation-play-state: paused;
+}
+
+.announcement-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: announcement-marquee 30s linear infinite;
+}
+
+.announcement-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding-right: 2.5rem;
+  flex-shrink: 0;
+}
+
+.announcement-bullet {
+  font-size: 1.1em;
+  opacity: 0.6;
+}
+
+@keyframes announcement-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .announcement-track {
+    animation: none;
+    transform: none;
+    width: 100%;
+    justify-content: center;
+    overflow-x: auto;
+  }
+}

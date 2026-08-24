@@ -18,6 +18,26 @@
     <span></span>
   </div>
 
+  <!-- ===== ANNOUNCEMENT BANNER ===== -->
+  {% if site.data.announcement and site.data.announcement.display == "show" %}
+  <div class="announcement-banner" style="background-color: {{ site.data.announcement.color | default: '#3ede54' }};" role="region" aria-label="Announcement">
+    <div class="announcement-track">
+      <div class="announcement-content">
+        <span>{{ site.data.announcement.message }}</span>
+        <span class="announcement-bullet">&bull;</span>
+        <span>{{ site.data.announcement.message }}</span>
+        <span class="announcement-bullet">&bull;</span>
+      </div>
+      <div class="announcement-content" aria-hidden="true">
+        <span>{{ site.data.announcement.message }}</span>
+        <span class="announcement-bullet">&bull;</span>
+        <span>{{ site.data.announcement.message }}</span>
+        <span class="announcement-bullet">&bull;</span>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
   <!-- ===== HEADER ===== -->
   <header class="site-header">
     <div class="header-top">

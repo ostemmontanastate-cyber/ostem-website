@@ -1,0 +1,8 @@
+# Announcement Banner Configuration
+# display: "show" to show the banner across the site, "unshow" to hide it
+# color: hex code for the banner background (default: "#3ede54" lime green)
+# message: the announcement text that scrolls along the banner
+
+display: "show"
+color: "#3ede54"
+message: "NACOE Welcome Back Picnic // September 3rd // NAH 1st Floor + Inspiration Hall (201 NAH) at 11:15AM-1:45PM"
