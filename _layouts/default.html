@@ -6,7 +6,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ page.description | default: site.description | escape }}">
   <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
-  <link rel="stylesheet" href="{{ '/assets/oSTEMNATIONAL.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/oSTEMNATIONAL.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  <style>
+    .announcement-banner {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      background-color: #3ede54;
+      color: #111111;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      position: relative;
+      user-select: none;
+      display: block;
+    }
+    .announcement-banner:hover .announcement-track {
+      -webkit-animation-play-state: paused;
+      animation-play-state: paused;
+    }
+    .announcement-track {
+      display: inline-flex;
+      width: max-content;
+      will-change: transform;
+      -webkit-animation: announcement-marquee 25s linear infinite;
+      animation: announcement-marquee 25s linear infinite;
+    }
+    .announcement-content {
+      display: inline-flex;
+      align-items: center;
+      gap: 2.5rem;
+      padding-right: 2.5rem;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+    .announcement-bullet {
+      font-size: 1.1em;
+      opacity: 0.6;
+    }
+    @-webkit-keyframes announcement-marquee {
+      0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+      }
+    }
+    @keyframes announcement-marquee {
+      0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+      }
+    }
+  </style>
 </head>
 
 <body>

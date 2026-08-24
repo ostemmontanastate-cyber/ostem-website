@@ -684,17 +684,20 @@ a:hover { text-decoration: none; }
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   position: relative;
   user-select: none;
+  display: block;
 }
 
 .announcement-banner:hover .announcement-track {
+  -webkit-animation-play-state: paused;
   animation-play-state: paused;
 }
 
 .announcement-track {
-  display: flex;
+  display: inline-flex;
   width: max-content;
   will-change: transform;
-  animation: announcement-marquee 30s linear infinite;
+  -webkit-animation: announcement-marquee 25s linear infinite;
+  animation: announcement-marquee 25s linear infinite;
 }
 
 .announcement-content {
@@ -703,6 +706,7 @@ a:hover { text-decoration: none; }
   gap: 2.5rem;
   padding-right: 2.5rem;
   flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .announcement-bullet {
@@ -710,21 +714,24 @@ a:hover { text-decoration: none; }
   opacity: 0.6;
 }
 
-@keyframes announcement-marquee {
+@-webkit-keyframes announcement-marquee {
   0% {
-    transform: translateX(0%);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(-50%);
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .announcement-track {
-    animation: none;
-    transform: none;
-    width: 100%;
-    justify-content: center;
-    overflow-x: auto;
+@keyframes announcement-marquee {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
   }
 }
