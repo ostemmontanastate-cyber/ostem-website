@@ -39,12 +39,6 @@ description: Get in touch with oSTEM at Montana State University — email, Disc
       <a href="{{ site.social.newsletter }}" target="_blank" rel="noopener noreferrer">Subscribe to our newsletter →</a>
     </p>
 
-    <h3>Campus Address</h3>
-    <p>
-      <!-- Update with real location if applicable -->
-      Montana State University<br>
-      Bozeman, MT 59717
-    </p>
   </div>
 
   <div class="contact-form-col">
