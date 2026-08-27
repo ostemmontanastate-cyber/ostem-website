@@ -25,6 +25,14 @@ description: Join oSTEM MSU — attend meetings, volunteer, become a leader, and
 
 ---
 
+## Member Availability & Interest Poll
+
+We want to make sure our meetings, social events, and workshops work around your schedule! Please take a moment to fill out our availability and interest poll below so we can better cater our meeting times and events to when you're free, and plan activities you're excited about.
+
+{% include poll-form.html %}
+
+---
+
 ## Weekly Newsletter
 
 Stay up-to-date with oSTEM MSU! Sign up for our weekly newsletter to get announcements, campus-wide event reminders, job and internship opportunities, and tips for navigating your time at MSU. You can also [open the sign-up form directly]({{ site.social.newsletter }}).
@@ -35,35 +43,42 @@ Stay up-to-date with oSTEM MSU! Sign up for our weekly newsletter to get announc
 
 ## Volunteer
 
-There are many ways to contribute to the chapter without holding a formal officer position:
+Volunteering is one of the best ways to support our chapter. Beyond helping run events, **your volunteer hours directly earn funding for oSTEM MSU** through ASMSU's Volunteer & Impact Montana (VIM) program!
 
-- **Event setup and logistics** — help run general meetings and social events
-- **Tabling and outreach** — represent oSTEM at campus resource fairs
-- **Workshop facilitation** — lead or co-lead a professional development session
-- **Conference mentorship** — help new attendees prepare for the annual conference
-- **Graphic design and communications** — assist with flyers, social posts, and the website
+### Earn Funding for oSTEM Through Volunteer Hours
+- **$15 per volunteer hour** — Every verified hour you log earns **$15 in funding** directly for our chapter (up to $1,500 per academic year), helping us fund meeting refreshments, community events, and conference travel.
+- **What counts:** Any unpaid volunteer service completed within the State of Montana or representing MSU (e.g. community service, campus tabling, local non-profits, outreach).
+- **How to log:** Track and submit your volunteer hours on **CatServe** and select **oSTEM at Montana State University** to receive the impact credit. You must be a member on our **CatsConnect** roster for your hours to count toward our club.
 
-To volunteer for a specific event or role, reach out in the `#volunteering` channel on Discord or email an officer directly.
+### Ways to Volunteer
+- **Event setup & logistics** — Help run general meetings, social mixers, and workshops
+- **Tabling & outreach** — Represent oSTEM at campus resource fairs like Catapalooza
+- **Workshop facilitation** — Lead or co-lead a study night, tutorial, or professional session
+- **Community & campus service** — Participate in volunteer projects across campus and Bozeman
+
+<div class="notice">
+  <strong>Need help submitting volunteer hours?</strong> Reach out to club leadership! We are here to help you get registered on CatsConnect, navigate CatServe, or verify your service hours. Connect with us in the <code>#volunteering</code> channel on <a href="{{ site.social.discord }}" target="_blank" rel="noopener noreferrer">Discord</a> or email an officer at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+</div>
 
 ---
 
 ## Becoming a Leadership Member
 
-Leadership positions are elected each spring for the following academic year. All current members are eligible to run.
+**We are actively looking for new student leaders to join our team!** Stepping into an officer role is a great way to build leadership skills, advocate for LGBTQ+ students in STEM, expand your professional network, and directly shape our chapter's events and community.
 
-**Open positions typically include:**
+If you are interested in taking on a leadership position, please **[fill out the availability & interest poll above](#member-availability--interest-poll)**, message us in Discord, or reach out directly via email at [{{ site.email }}](mailto:{{ site.email }}).
 
-- President
-- Vice President
-- Treasurer
-- Secretary
-- Events Coordinator
-- Conference Chair
+### Open Leadership Roles & Expectations
 
-Elections are announced at the last meeting of spring semester. If you are interested in running, introduce yourself to current leadership early — shadowing an officer is a great way to prepare.
+- **Vice President** — Supports the president with chapter operations, assists with officer coordination, and helps lead general meetings and club initiatives.
+- **Treasurer** — Manages chapter funds and budgets, tracks ASMSU and VIM funding allocations, and submits purchase requests on CatsConnect.
+- **Secretary** — Records meeting notes and action items, maintains member records and CatsConnect rosters, and coordinates internal officer logistics.
+- **Events Coordinator** — Organizes meeting agendas, coordinates social mixers and professional workshops, and arranges campus tabling events.
+- **Social Media Manager** — Creates flyers and digital graphics, manages chapter social media accounts, and keeps the community engaged online.
+- **Alumni / Newsletter Manager** — Curates and distributes the oSTEM Weekly newsletter, manages mailing list outreach, and maintains connections with alumni.
 
 <div class="notice">
-  <strong>New to the club?</strong> We strongly encourage at least one semester of general membership before running for an officer role, though it is not required.
+  <strong>Interested in leading or shadowing an officer?</strong> No previous leadership experience is required — we welcome enthusiasm, fresh ideas, and a commitment to our community. If you have questions about any position, connect with current officers on <a href="{{ site.social.discord }}" target="_blank" rel="noopener noreferrer">Discord</a> or via <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
 </div>
 
 ---

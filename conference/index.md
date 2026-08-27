@@ -21,6 +21,24 @@ The **oSTEM Annual Conference** is the world's largest gathering of LGBTQ+ peopl
 
 ---
 
+## Preferred Requirements for Attendance
+
+To be considered for fully funded conference attendance, applicants are expected to show active involvement and dedication to the MSU oSTEM community through one (or a mix) of the following pathways:
+
+- **Holding or stepping into an active leadership role** within the chapter
+- **Registering at least 20 VIM volunteer hours** credited to oSTEM on CatServe
+- **Attending at least 70% of general meetings and chapter events** throughout the year
+- **A combination or mix of the above suggestions** — *Example:* If you aren't able to make it to every meeting due to class conflicts, but you volunteered 10 hours and helped an officer with several weekly emails, event setup, or tabling, that counts toward your eligibility!
+
+### Maximize Your Chances: Connect with Leadership
+We strongly encourage members to reach out directly to current leadership early on! You can consult and negotiate flexible arrangements on effort, tasks, or projects you can take on to assist the club and strengthen your chances of being selected for the conference. Reach out in the `#conference` channel on [Discord]({{ site.social.discord }}) or email us at [{{ site.email }}](mailto:{{ site.email }}).
+
+<div class="notice">
+  <strong>Why these requirements?</strong> Fully-funded conference travel is a massive perk of club membership made possible through university funding and donor support. Our goal is to ensure that conference attendees are dedicated maintainers and retainers of oSTEM MSU who will bring their knowledge, enthusiasm, and leadership back to sustain and grow our campus community. Giving back to the chapter is heavily encouraged!
+</div>
+
+---
+
 {% assign current = site.data.conferences | first %}
 
 ## {{ current.year }} oSTEM Conference

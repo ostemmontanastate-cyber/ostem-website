@@ -1,0 +1,278 @@
+<!-- Member Availability & Interest Poll Form -->
+<style>
+  #ostem-poll-container {
+    --poll-primary: #3ede54;
+    --poll-primary-hover: #33be46;
+    --poll-primary-dark: #1b8a2c;
+    --poll-bg: #f8f9fa;
+    --poll-card-bg: #ffffff;
+    --poll-text: #1a1a1a;
+    --poll-border: #e2e8f0;
+
+    max-width: 650px;
+    margin: 1.5rem auto 2rem auto;
+    background: var(--poll-card-bg);
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--poll-border);
+    color: var(--poll-text);
+  }
+
+  #ostem-poll-container header {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--poll-border);
+    padding-bottom: 1rem;
+  }
+
+  #ostem-poll-container h3.poll-title {
+    color: #111111;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  #ostem-poll-container p.subtitle {
+    color: #555555;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+
+  #ostem-poll-container .form-group {
+    margin-bottom: 1.75rem;
+  }
+
+  #ostem-poll-container label.section-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--poll-text);
+  }
+
+  #ostem-poll-container .required {
+    color: #e53e3e;
+    margin-left: 0.25rem;
+  }
+
+  #ostem-poll-container .optional-tag {
+    font-size: 0.8rem;
+    color: #718096;
+    font-weight: normal;
+    margin-left: 0.25rem;
+  }
+
+  #ostem-poll-container .checkbox-grid, 
+  #ostem-poll-container .radio-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  #ostem-poll-container .option-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+  }
+
+  #ostem-poll-container input[type="checkbox"], 
+  #ostem-poll-container input[type="radio"] {
+    accent-color: #28a745;
+    width: 1.1rem;
+    height: 1.1rem;
+    cursor: pointer;
+  }
+
+  #ostem-poll-container input[type="text"],
+  #ostem-poll-container input[type="email"],
+  #ostem-poll-container textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--poll-border);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background: #ffffff;
+    box-sizing: border-box;
+  }
+
+  #ostem-poll-container input[type="text"]:focus,
+  #ostem-poll-container input[type="email"]:focus,
+  #ostem-poll-container textarea:focus {
+    outline: none;
+    border-color: var(--poll-primary);
+    box-shadow: 0 0 0 3px rgba(62, 222, 84, 0.25);
+  }
+
+  #ostem-poll-container textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  #ostem-poll-container .conditional-section {
+    margin-top: 1rem;
+    padding-left: 1.25rem;
+    border-left: 4px solid var(--poll-primary);
+    background: #f2fbf4;
+    padding: 1rem;
+    border-radius: 0 8px 8px 0;
+  }
+
+  #ostem-poll-container .hidden {
+    display: none;
+  }
+
+  #ostem-poll-container button[type="submit"] {
+    width: 100%;
+    background-color: var(--poll-primary);
+    color: #111111;
+    border: none;
+    padding: 0.95rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+  }
+
+  #ostem-poll-container button[type="submit"]:hover {
+    background-color: var(--poll-primary-hover);
+  }
+
+  #ostem-poll-container button[type="submit"]:active {
+    transform: scale(0.99);
+  }
+</style>
+
+<div id="ostem-poll-container">
+  <header>
+    <h3 class="poll-title">oSTEM Member Poll</h3>
+    <p class="subtitle">Help us plan meetings, events, and leadership opportunities for the upcoming term!</p>
+  </header>
+
+  <form action="https://formspree.io/f/xbgjroak" method="POST">
+    
+    <div class="form-group">
+      <label class="section-label" for="poll-name">Full Name <span class="required">*</span></label>
+      <input type="text" id="poll-name" name="name" required placeholder="Alex Morgan">
+    </div>
+
+    <div class="form-group">
+      <label class="section-label" for="poll-email">Email Address <span class="required">*</span></label>
+      <input type="email" id="poll-email" name="email" required placeholder="alex@university.edu">
+    </div>
+
+    <div class="form-group">
+      <label class="section-label">General Meeting Availability <span class="required">*</span></label>
+      <p style="font-size: 0.85rem; color: #555555; margin-bottom: 0.5rem;">Select all days and time slots that work best for you, or specify custom times under Other:</p>
+      <div class="checkbox-grid">
+        <label class="option-item"><input type="checkbox" name="availability[]" value="Mon Afternoon"> Mon Afternoon</label>
+        <label class="option-item"><input type="checkbox" name="availability[]" value="Mon Evening"> Mon Evening</label>
+        <label class="option-item"><input type="checkbox" name="availability[]" value="Tue Afternoon"> Tue Afternoon</label>
+        <label class="option-item"><input type="checkbox" name="availability[]" value="Tue Evening"> Tue Evening</label>
+        <label class="option-item"><input type="checkbox" name="availability[]" value="Wed Afternoon"> Wed Afternoon</label>
+        <label class="option-item"><input type="checkbox" name="availability[]" value="Wed Evening"> Wed Evening</label>
+        <label class="option-item"><input type="checkbox" name="availability[]" value="Thu Afternoon"> Thu Afternoon</label>
+        <label class="option-item"><input type="checkbox" name="availability[]" value="Thu Evening"> Thu Evening</label>
+        <label class="option-item"><input type="checkbox" name="availability[]" value="Fri Afternoon"> Fri Afternoon</label>
+        <label class="option-item"><input type="checkbox" name="availability[]" value="Weekends"> Weekends</label>
+        <label class="option-item"><input type="checkbox" name="availability[]" value="Other" id="avail-other-check" onchange="toggleOtherAvailability(this.checked)"> Other</label>
+      </div>
+
+      <div id="other-availability-section" class="conditional-section hidden" style="margin-top: 0.75rem;">
+        <label class="section-label" for="poll-other-avail" style="font-size: 0.9rem;">Custom Times / Other Availability Details:</label>
+        <input type="text" id="poll-other-avail" name="other_availability" placeholder="e.g., Fridays after 4:00 PM, Sunday afternoons, alternating Thursdays...">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="section-label">Are you interested in a leadership role? <span class="optional-tag">(Optional)</span></label>
+      <div class="radio-group">
+        <label class="option-item">
+          <input type="radio" name="leadership_interest" value="Yes" id="lead-yes" onclick="toggleLeadershipOptions(true)"> Yes
+        </label>
+        <label class="option-item">
+          <input type="radio" name="leadership_interest" value="No" id="lead-no" onclick="toggleLeadershipOptions(false)"> No
+        </label>
+        <label class="option-item">
+          <input type="radio" name="leadership_interest" value="Maybe/Unsure" onclick="toggleLeadershipOptions(true)"> Maybe
+        </label>
+      </div>
+
+      <div id="leadership-roles" class="conditional-section hidden">
+        <label class="section-label" style="font-size: 0.95rem;">Which positions interest you? <span class="optional-tag">(Select all that apply)</span></label>
+        <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem;">
+          <label class="option-item">
+            <input type="checkbox" name="leadership_roles[]" value="Vice President"> Vice President
+          </label>
+          <label class="option-item">
+            <input type="checkbox" name="leadership_roles[]" value="Treasury"> Treasury
+          </label>
+          <label class="option-item">
+            <input type="checkbox" name="leadership_roles[]" value="Secretary"> Secretary
+          </label>
+          <label class="option-item">
+            <input type="checkbox" name="leadership_roles[]" value="Events Coordinator"> Events Coordinator
+          </label>
+          <label class="option-item">
+            <input type="checkbox" name="leadership_roles[]" value="Social Media Manager"> Social Media Manager
+          </label>
+          <label class="option-item">
+            <input type="checkbox" name="leadership_roles[]" value="Alumni / Newsletter Manager"> Alumni / Newsletter Manager
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="section-label">Are you interested in attending the National oSTEM Conference? <span class="optional-tag">(Optional)</span></label>
+      <div class="radio-group">
+        <label class="option-item"><input type="radio" name="conference_interest" value="Yes"> Yes</label>
+        <label class="option-item"><input type="radio" name="conference_interest" value="No"> No</label>
+        <label class="option-item"><input type="radio" name="conference_interest" value="Need more info"> Need more info</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="section-label" for="poll-suggestions">What would you like to see out of the club that would make you want to come more? <span class="optional-tag">(Optional)</span></label>
+      <textarea id="poll-suggestions" name="suggestions" placeholder="e.g., Guest speakers, study nights, resume reviews, social hangouts..."></textarea>
+    </div>
+
+    <button type="submit">Submit Response</button>
+
+  </form>
+</div>
+
+<script>
+  function toggleLeadershipOptions(show) {
+    const roleSection = document.getElementById('leadership-roles');
+    if (!roleSection) return;
+    if (show) {
+      roleSection.classList.remove('hidden');
+    } else {
+      roleSection.classList.add('hidden');
+      const checkboxes = roleSection.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach(cb => cb.checked = false);
+    }
+  }
+
+  function toggleOtherAvailability(show) {
+    const otherSection = document.getElementById('other-availability-section');
+    if (!otherSection) return;
+    if (show) {
+      otherSection.classList.remove('hidden');
+      const input = otherSection.querySelector('input');
+      if (input) input.focus();
+    } else {
+      otherSection.classList.add('hidden');
+      const input = otherSection.querySelector('input');
+      if (input) input.value = '';
+    }
+  }
+</script>
