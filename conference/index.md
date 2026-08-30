@@ -91,7 +91,7 @@ The following students were selected from the early application deadline. Additi
 
 ---
 
-## Apply — Due {{ current.application_deadline }}
+## Apply — Due {{ current.application_deadline }} {#apply}
 
 <form class="application-form" id="conference-application-form"
       action="https://formspree.io/f/xgawdyqn"
