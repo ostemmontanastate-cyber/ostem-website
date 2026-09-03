@@ -26,7 +26,7 @@ The **oSTEM Annual Conference** is the world's largest gathering of LGBTQ+ peopl
 To be considered for fully funded conference attendance, applicants are expected to show active involvement and dedication to the MSU oSTEM community through one (or a mix) of the following pathways:
 
 - **Holding or stepping into an active leadership role** within the chapter
-- **Registering at least 20 VIM volunteer hours** credited to oSTEM on CatServe
+- **Registering at least 20 VIM volunteer hours** credited to oSTEM on [CatServe]({{ site.social.catserve }})
 - **Attending at least 70% of general meetings and chapter events** throughout the year
 - **A combination or mix of the above suggestions** — *Example:* If you aren't able to make it to every meeting due to class conflicts, but you volunteered 10 hours and helped an officer with several weekly emails, event setup, or tabling, that counts toward your eligibility!
 

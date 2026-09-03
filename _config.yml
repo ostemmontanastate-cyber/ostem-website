@@ -17,6 +17,8 @@ social:
   linktree: "https://linktr.ee/ostem.msu"
   newsletter: "https://preview.mailerlite.io/forms/2077342/178326905847547293/share"
 
+catserve: "https://montana.givepulse.com/"
+
 # Exclude from build
 exclude:
   - Website.md

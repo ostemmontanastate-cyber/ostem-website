@@ -39,6 +39,12 @@ description: Get in touch with oSTEM at Montana State University — email, Disc
       <a href="{{ site.social.newsletter }}" target="_blank" rel="noopener noreferrer">Subscribe to our newsletter →</a>
     </p>
 
+    <h3>CatServe (Volunteer Hours)</h3>
+    <p>
+      Find volunteer opportunities and log service hours for oSTEM MSU on GivePulse.<br>
+      <a href="{{ site.social.catserve }}" target="_blank" rel="noopener noreferrer">Log hours on CatServe →</a>
+    </p>
+
   </div>
 
   <div class="contact-form-col">

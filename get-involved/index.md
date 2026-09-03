@@ -48,7 +48,7 @@ Volunteering is one of the best ways to support our chapter. Beyond helping run 
 ### Earn Funding for oSTEM Through Volunteer Hours
 - **$15 per volunteer hour** — Every verified hour you log earns **$15 in funding** directly for our chapter (up to $1,500 per academic year), helping us fund meeting refreshments, community events, and conference travel.
 - **What counts:** Any unpaid volunteer service completed within the State of Montana or representing MSU (e.g. community service, campus tabling, local non-profits, outreach).
-- **How to log:** Track and submit your volunteer hours on **CatServe** and select **oSTEM at Montana State University** to receive the impact credit. You must be a member on our **CatsConnect** roster for your hours to count toward our club.
+- **How to log:** Track and submit your volunteer hours on **[CatServe]({{ site.social.catserve }})** and select **oSTEM at Montana State University** to receive the impact credit. You must be a member on our **CatsConnect** roster for your hours to count toward our club.
 
 ### Ways to Volunteer
 - **Event setup & logistics** — Help run general meetings, social mixers, and workshops
@@ -57,7 +57,7 @@ Volunteering is one of the best ways to support our chapter. Beyond helping run 
 - **Community & campus service** — Participate in volunteer projects across campus and Bozeman
 
 <div class="notice">
-  <strong>Need help submitting volunteer hours?</strong> Reach out to club leadership! We are here to help you get registered on CatsConnect, navigate CatServe, or verify your service hours. Connect with us in the <code>#volunteering</code> channel on <a href="{{ site.social.discord }}" target="_blank" rel="noopener noreferrer">Discord</a> or email an officer at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+  <strong>Need help submitting volunteer hours?</strong> Reach out to club leadership! We are here to help you get registered on CatsConnect, navigate <a href="{{ site.social.catserve }}" target="_blank" rel="noopener noreferrer">CatServe</a>, or verify your service hours. Connect with us in the <code>#volunteering</code> channel on <a href="{{ site.social.discord }}" target="_blank" rel="noopener noreferrer">Discord</a> or email an officer at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
 </div>
 
 ---

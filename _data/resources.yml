@@ -33,6 +33,9 @@
 
 - section: "Campus Resources at MSU"
   links:
+    - name: "CatServe (GivePulse)"
+      url: "https://montana.givepulse.com/"
+      desc: "MSU's community service portal to find volunteer opportunities and log service hours"
     - name: "MSU Office of Diversity & Inclusion"
       url: "https://www.montana.edu/diversity/"
       desc: "Campus-wide diversity resources and programming"
