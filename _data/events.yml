@@ -1,18 +1,73 @@
 # Upcoming events — add new events here and they appear automatically on Get Involved.
 # Format dates as YYYY-MM-DD. month/day are display strings.
-
-- title: NACOE Welcome Back Picnic
-  date: 2026-09-03
+- title: "FAST Enterprises: From College to Career"
+  date: 2026-09-29
   month: September
-  day: "03"
-  time: "11:15AM-1:45PM"
-  location: "NAH 1st Floor + Inspiration Hall (201 NAH)"
-  description: "Visit oSTEM at the welcome back picnic! Come meet our officers and learn more about the club!"
+  day: "29"
+  time: "6:30-7:30PM"
+  location: "TBD (Check Discord)"
+  description: "Join oSTEM and Gaby from the Fast Enterprises recruiting team for 'From College to Career: Transitioning into the Workplace.' Are you worried about the transition from college to career? This presentation discusses tools for coping with post-grad blues, learning what to expect during an internship or your first year on the job, and tips for starting your career on the right foot. Fast Enterprises is a software development and IT consulting company hiring problem solvers across CS, Engineering, Math, and other majors ahead of the MSU Career Fair!"
+  perks: "Pizza Provided!"
 
-- title: First Semester Meeting! 
-  date: 2026-09-03
+- title: General Meeting
+  date: 2026-09-17
   month: September
+  day: "17"
+  time: "5:10PM-6:00PM"
+  location: "Gianforte Hall 200 (Tentative)"
+  recurring: "1st & 3rd Thursday of every month"
+  description: "A representitive from the Brooke Owens Aerospace Fellowship (for all majors) for women and gender minority's is coming to speak about the upcoming fellowship"
+
+- title: General Meeting
+  date: 2026-10-01
+  month: October
+  day: "01"
+  time: "5:10PM-6:00PM"
+  location: "Gianforte Hall 200 (Tentative)"
+  recurring: "1st & 3rd Thursday of every month"
+  description: "Bi-weekly chapter meeting. Location is tentatively Gianforte Hall 200 — please check Discord for the most up-to-date meeting location."
+
+- title: General Meeting
+  date: 2026-10-15
+  month: October
+  day: "15"
+  time: "5:10PM-6:00PM"
+  location: "Gianforte Hall 200 (Tentative)"
+  recurring: "1st & 3rd Thursday of every month"
+  description: "Bi-weekly chapter meeting. Location is tentatively Gianforte Hall 200 — please check Discord for the most up-to-date meeting location."
+
+- title: General Meeting
+  date: 2026-11-05
+  month: November
+  day: "05"
+  time: "5:10PM-6:00PM"
+  location: "Gianforte Hall 200 (Tentative)"
+  recurring: "1st & 3rd Thursday of every month"
+  description: "Bi-weekly chapter meeting. Location is tentatively Gianforte Hall 200 — please check Discord for the most up-to-date meeting location."
+
+- title: General Meeting
+  date: 2026-11-19
+  month: November
+  day: "19"
+  time: "5:10PM-6:00PM"
+  location: "Gianforte Hall 200 (Tentative)"
+  recurring: "1st & 3rd Thursday of every month"
+  description: "Bi-weekly chapter meeting. Location is tentatively Gianforte Hall 200 — please check Discord for the most up-to-date meeting location."
+
+- title: General Meeting
+  date: 2026-12-03
+  month: December
   day: "03"
   time: "5:10PM-6:00PM"
-  location: "Alana Turning Classroom in Gianforte Hall"
-  description: "Come attend the first meeting of the oSTEM semester! Learn about our club and events, our National conference this Fall, and how our club works!"
+  location: "Gianforte Hall 200 (Tentative)"
+  recurring: "1st & 3rd Thursday of every month"
+  description: "Bi-weekly chapter meeting. Location is tentatively Gianforte Hall 200 — please check Discord for the most up-to-date meeting location."
+
+- title: General Meeting
+  date: 2026-12-17
+  month: December
+  day: "17"
+  time: "5:10PM-6:00PM"
+  location: "Gianforte Hall 200 (Tentative)"
+  recurring: "1st & 3rd Thursday of every month"
+  description: "End of semester general meeting. Location is tentatively Gianforte Hall 200 — please check Discord for the most up-to-date meeting location."
