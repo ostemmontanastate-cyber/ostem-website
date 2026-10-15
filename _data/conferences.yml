@@ -21,17 +21,38 @@
   description: "The 2026 national conference will take place October 22–24 in Albuquerque, New Mexico. The chapter can potentially support 10–12 students. Attendees receive airfare, shared lodging, group meals, and conference registration."
   participants:
     - Greyson
-    - Jade
+    - Willow
     - Matthew
     - Will
-  hotel: "TBD"
+    - Sydney 
+    - Charles
+    - Azazel
+    - Maximilian
+    - John Paxton
+    - Susan Kelly
+  hotel: "Clyde Hotel"
+  flight-information:
+    - 7:05 (flight):
+      - departure: 5:00am leave time from in front of yellowstone hall (Car pool with charles)
+      - Charles
+      - Azazel
+      - Maximilian
+      - Sydney 
+    - 5:50 (flight):
+      - departure: 4:00am leave time from paxton's house (Car Pool from Paxton's)
+      - Greyson
+      - Willow
+      - Matthew
+      - Will
   hotel_rooms:
     - label: "Student Room 1"
-      occupants: "TBD"
+      occupants: "Azazel, Maximilian, Sydney, Charles"
     - label: "Student Room 2"
-      occupants: "TBD"
+      occupants: "Will, Greyson, Matthew, Willow"
     - label: "Student Room 3"
-      occupants: "TBD"
+      occupants: "Susan Kelly"
+    - label: "Student Room 4"
+      occupants: "John Paxton"
   itinerary:
     - day: "Thursday, October 22 — Travel to Albuquerque"
       events:
